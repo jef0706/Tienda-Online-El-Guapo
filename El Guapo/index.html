@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL GUAPO | Ropa para Bebés</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <span>📞 +502 3312-4292</span>
+        <span>🚚 Envíos a todo Guatemala</span>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            🧸 EL GUAPO
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Buscar productos">
+            <button>🔍</button>
+        </div>
+
+        <div class="cart" title="Haz clic para ver tu carrito">
+            🛒 Carrito (0)
+        </div>
+
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#suscripcion">Suscripción</a>
+        <a href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-main">
+
+            <img src="imagenes/nino.png" alt="Nueva colección para bebés">
+
+            <div class="hero-text">
+
+                <h1>Nueva Colección 2026</h1>
+
+                <p>
+                    Descubre ropa cómoda, moderna y de excelente calidad para los más pequeños del hogar.
+                </p>
+
+                <button id="btnComprarAhora">
+                    Comprar Ahora
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-side">
+
+            <img src="imagenes/nino.2.png" alt="Ropa infantil">
+            <img src="imagenes/nino.3.png" alt="Body clásico">
+            <img src="imagenes/nino.4.png" alt="Pijama suave">
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="section-title">
+
+        <h2>Nuevos Productos</h2>
+
+        <div style="margin-top:20px;">
+            <button onclick="mostrarProductosEconomicos()">
+                Ver Productos Económicos
+            </button>
+        </div>
+
+    </section>
+
+    <section class="products" id="productos">
+
+        <!-- Producto 1 -->
+        <div class="card">
+
+            <span class="badge">NUEVO</span>
+
+            <img src="imagenes/nino.png" alt="Chaqueta Baby">
+
+            <h3>Chaqueta Baby</h3>
+
+            <p>Q120</p>
+
+            <button class="btn-comprar">
+                Comprar
+            </button>
+
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="card">
+
+            <span class="badge">NUEVO</span>
+
+            <img src="imagenes/nino.4.png" alt="Pijama suave">
+
+            <h3>Pijama Suave</h3>
+
+            <p>Q95</p>
+
+            <button class="btn-comprar">
+                Comprar
+            </button>
+
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="card">
+
+            <span class="badge">NUEVO</span>
+
+            <img src="imagenes/nino.5.png" alt="Conjunto Premium">
+
+            <h3>Conjunto Premium</h3>
+
+            <p>Q140</p>
+
+            <button class="btn-comprar">
+                Comprar
+            </button>
+
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="card">
+
+            <span class="badge">NUEVO</span>
+
+            <img src="imagenes/nino.3.png" alt="Body clásico">
+
+            <h3>Body Clásico</h3>
+
+            <p>Q80</p>
+
+            <button class="btn-comprar">
+                Comprar
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="galeria">
+
+        <img src="imagenes/nino.png" alt="Galería de productos">
+        <img src="imagenes/nino.2.png" alt="Galería de productos">
+        <img src="imagenes/nino.3.png" alt="Galería de productos">
+
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="suscripcion">
+
+        <h2>Suscríbete a nuestras ofertas</h2>
+
+        <p>Recibe promociones y novedades directamente en tu correo.</p>
+
+        <br>
+
+        <input
+            type="email"
+            id="correo"
+            placeholder="Ingresa tu correo">
+
+        <button id="btnSuscribir">
+            Suscribirme
+        </button>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>Categorías</h3>
+                <p>Niños</p>
+                <p>Niñas</p>
+                <p>Accesorios</p>
+            </div>
+
+            <div>
+                <h3>Información</h3>
+                <p>Nosotros</p>
+                <p>Promociones</p>
+                <p>Contacto</p>
+            </div>
+
+            <div>
+                <h3>Mi Cuenta</h3>
+                <p>Pedidos</p>
+                <p>Favoritos</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>📞 +502 3312-4292</p>
+                <p>📧 ventas@elguapo.com</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 EL GUAPO - Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- SWEETALERT2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
